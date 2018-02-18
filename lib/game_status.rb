@@ -37,3 +37,11 @@ end
 def over?(board)
   won?(board) || draw?(board)
 end
+
+def winner?(board)
+  if(won?(board))
+    return win_combination[0]
+  else
+    return nil
+  end
+end
