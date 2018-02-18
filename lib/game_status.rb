@@ -39,9 +39,7 @@ def over?(board)
 end
 
 def winner?(board)
-  if won?(board)
-    return board[won?(board)[0]]
-  else
-    return nil
-  end
+  win_combination = won?(board)
+  win_location = win_combination[0]
+  board[winning_location)]
 end
